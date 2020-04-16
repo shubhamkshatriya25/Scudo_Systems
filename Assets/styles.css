@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     transition: all 0.35s ease-in-out;
@@ -35,6 +39,7 @@ body{
     border:none;
     overflow: hidden;
     margin: 0 auto;
+    animation-delay: 5s;
     animation: reveal 2s linear forwards;
 }
 
@@ -142,6 +147,7 @@ body{
 }
 
 .jumbotron .container .title{
+    margin-top: 50px;
     font-size: 3rem;
     font-weight: bold;
     color: white;
@@ -215,6 +221,8 @@ body {
     background: #000;
     position: relative;
     max-height: 330px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .box6:after {
