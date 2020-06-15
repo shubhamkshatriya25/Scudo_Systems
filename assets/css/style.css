@@ -1,19 +1,26 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700|Sacramento|Sulphur+Point:400,700&display=swap");
 
+body{
+    background: #041f24;
+    
+}
 .section-title {
     font-size: 3rem;
     font-weight: bold;
-    color: #111;
+    color: #76FF03;
     text-align: center;
+    font-family: 'Metal Mania',
+    cursive;
 }
 
 .section-desc {
-    font-size: 1.2rem;
-    color: #111;
+    font-size: 1.4rem;
+    color: #76FF03;
     text-align: center;
+    font-family: cursive;
+    font-weight: lighter;
 }
 .preloader {
-    background-color: #000000;
+    background-color: #041f24;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -29,12 +36,12 @@
 }
 
 .preloader .preloader-circle {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     position: relative;
     border-style: solid;
     border-width: 1px;
-    border-top-color: rgb(56, 4, 114);
+    border-top-color: #76FF03;
     border-bottom-color: transparent;
     border-left-color: transparent;
     border-right-color: transparent;
@@ -51,7 +58,7 @@
 }
 
 .preloader .preloader-circle2 {
-    border-top-color: rgb(56, 4, 114)
+    border-top-color: #76FF03
 }
 
 .preloader .preloader-img {
@@ -66,7 +73,7 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    padding-top: 6px;
+    /* padding-top: 6px; */
     -webkit-transition: .6s;
     -o-transition: .6s;
     transition: .6s
@@ -121,23 +128,25 @@
 }
 
 #header {
-    padding: 30px 0;
-    height: 92px;
+    padding: 20px 0;
+    height: 72px;
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     transition: all 0.5s;
     z-index: 997;
+    background: #041f24;
+    box-shadow: 0px 2px 10px #111111;
     
 }
 
-#header.header-scrolled {
+/* #header.header-scrolled {
     background: rgba(3, 3, 3, 1);
     padding: 20px 0;
     height: 72px;
     transition: all 0.5s;
-}
+} */
 
 #header #logo {
     float: left;
@@ -147,6 +156,7 @@
     #header #logo {
         padding-left: 60px;
     }
+  
 }
 
 #header #logo h1 {
@@ -154,16 +164,17 @@
     margin: 0;
     padding: 0;
     line-height: 1;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Metal Mania',
+    cursive;
     font-weight: 700;
-    letter-spacing: -3px;
+    letter-spacing: 2px;
 }
 
 #header #logo h1 a,
 #header #logo h1 a:hover {
     color: #fff;
     padding-left: 10px;
-    border-left: 4px solid rgb(56, 4, 114);
+    border-left: 4px solid #76FF03;
 }
 
 #header #logo img {
@@ -176,7 +187,9 @@
     #header #logo h1 {
         font-size: 28px;
     }
-
+    #header {
+        padding: 25px 0;
+    }
     #header #logo img {
         max-height: 40px;
     }
@@ -260,54 +273,22 @@
 
 /* Nav Meu Styling */
 .nav-menu a {
-    padding: 10px 8px 10px 8px;
+    padding: 10px 14px 10px 14px;
     text-decoration: none;
     display: inline-block;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 15px;
+    color: #76FF03;
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 17px;
     text-transform: uppercase;
     outline: none;
     transition: 0.35s ease;
 }
 
-.nav-menu li:hover>a,
 .nav-menu>.menu-active>a {
-    color: rgb(56, 4, 114);
+    border-bottom: 4px solid #76FF03;
 }
 
-.nav-menu>li {
-    margin-left: 10px;
-}
-
-.nav-menu ul {
-    margin: 4px 0 0 0;
-    padding: 10px;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    background: #fff;
-}
-
-.nav-menu ul li {
-    transition: 0.3s;
-}
-
-.nav-menu ul li a {
-    padding: 10px;
-    color: #333;
-    transition: 0.3s;
-    display: block;
-    font-size: 13px;
-    text-transform: none;
-}
-
-.nav-menu ul li:hover>a {
-    color: rgb(56, 4, 114);
-}
-
-.nav-menu ul ul {
-    margin: 0;
-}
 
 /* Mobile Nav Toggle */
 #mobile-nav-toggle {
@@ -339,20 +320,21 @@
 #mobile-nav {
     position: fixed;
     top: 0;
-    padding-top: 18px;
+    padding-top: 20px;
     bottom: 0;
     z-index: 998;
-    background: rgba(0, 0, 0, 0.9);
-    left: -260px;
-    width: 260px;
+    background: #041f24ec;
+    left: -250px;
+    width: 250px;
     overflow-y: auto;
     transition: 0.4s;
+    
 }
 
 #mobile-nav ul {
     padding: 0;
     margin: 0;
-    list-style: none;
+    list-style: none
 }
 
 #mobile-nav ul li {
@@ -360,8 +342,8 @@
 }
 
 #mobile-nav ul li a {
-    color: #fff;
-    font-size: 13px;
+    color: #76FF03;
+    font-size: 17px;
     text-transform: uppercase;
     overflow: hidden;
     padding: 10px 22px 10px 15px;
@@ -370,12 +352,12 @@
     width: 100%;
     display: block;
     outline: none;
-    font-weight: 700;
-    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-family: cursive;
 }
 
 #mobile-nav ul li a:hover {
-    color: rgb(56, 4, 114);
+    color: #fff;
 }
 
 #mobile-nav ul li li {
@@ -383,30 +365,9 @@
 }
 
 #mobile-nav ul li.menu-active a {
-    color: rgb(56, 4, 114);
-}
-
-/* 
-#mobile-nav ul .menu-has-children i {
-    position: absolute;
-    right: 0;
-    z-index: 99;
-    padding: 15px;
-    cursor: pointer;
     color: #fff;
 }
 
-#mobile-nav ul .menu-has-children i.fa-chevron-up {
-    color: #189dd2;
-}
-
-#mobile-nav ul .menu-has-children li a {
-    text-transform: none;
-} */
-
-#mobile-nav ul .menu-item-active {
-    color: rgb(56, 4, 114);
-}
 
 #mobile-body-overly {
     width: 100%;
@@ -415,7 +376,7 @@
     top: 0;
     left: 0;
     position: fixed;
-    background: rgba(0, 0, 0, 0.7);
+    background: #041f24b9;
     display: none;
 }
 
@@ -433,48 +394,50 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .jumbotron {
     width: 100%;
-    height: 80vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(../img/ssllp.PNG);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
+    height: 90vh;
+    background: #041f24;
 }
-
+.jumbotron .container{
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
 .jumbotron .container .title {
-    margin-top: 100px;
     font-size: 3rem;
     font-weight: bold;
     color: white;
-    text-align: center;
+    font-family: 'Metal Mania',
+     cursive;
 }
 
 .jumbotron .container .desc {
-    font-size: 1.5rem;
-    color: white;
-    margin: 20px 10px;
+    font-size: 1.3rem;
+    color: #76FF03;
+    font-family: cursive;
 }
 
 .jumbotron .container button,
-.user-mail button {
+#contact button {
     margin-top: 20px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 10px 20px;
-    border-radius: 30px;
-    background-color: rgb(105, 105, 105);
-    color: white;
-    border: none;
-    transition: all 0.3s ease;
+    background-color: transparent;
+    color: #76FF03;
+    border: 1px solid #76FF03;
     text-align: center;
+    cursor: pointer;
+    font-family: cursive;
 }
 
-.jumbotron .container button:hover,
-.user-mail button:hover {
-    background-color: rgb(63, 63, 63);
-    transform: scale(1.1);
-}
 
+/* about */
+#about img{
+    width: 100%;
+    height: 100%;
+    border: 10px solid #fff;
+}
 
 /* Style for team */
 #team {
@@ -504,15 +467,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .box6 {
-    background: #000;
+    background: #041f24;
     position: relative;
     height: 350px;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 5px 10px 30px #000303;
 }
 
 .box6:after {
-    background: rgba(0, 0, 0, .7);
+    background:#041f24af;
     position: absolute;
     top: 0;
     left: -30%;
@@ -556,11 +520,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .box6 .title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
     font-weight: 900;
     color: #fff;
     margin: 0 0 10px;
-    transform: scale(0)
+    transform: scale(0);
+    font-family: 'Metal Mania',
+    cursive;
 }
 
 .box6:hover .title {
@@ -578,8 +545,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: block;
     font-size: 1rem;
     color: #fff;
-    margin-bottom: 5px;
-
+    margin-bottom: 8px;
+    font-family: cursive;
 }
 
 .box6 .icon {
@@ -616,14 +583,14 @@ body.mobile-nav-active #mobile-nav-toggle {
     line-height: 2rem;
     background: #fff;
     font-size: 18px;
-    color: #111;
+    color: #041f24;
     margin-bottom: 5px;
     transition: all .35s ease
 }
 
 .box6 .icon li a:hover {
-    background: #111;
-    color: #fff
+    background: #041f24;
+    color: #76FF03;
 }
 
 @media only screen and (max-width:990px) {
@@ -643,11 +610,16 @@ body.mobile-nav-active #mobile-nav-toggle {
     .box6 {
         height: 300px;
     }
+    .jumbotron .container {
+        width: 100%;
+        top: 200px;
+        left: 10px;
+    }
 }
 /* style for contact */
-#contact {
+/* #contact {
     background-color: rgb(143, 143, 143, 0.3);
-}
+} */
 
 .details {
     text-align: center;
@@ -660,15 +632,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 10px;
 }
 
-.form {
-    border: none;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    padding: 5px;
-    font-size: 1.2rem
-}
+
 
 .user-mail {
     margin-top: 10px;
@@ -678,7 +642,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 footer {
-    background-color: black;
     text-align: center;
     padding: 30px;
     margin-top: 100px;
@@ -692,6 +655,6 @@ footer img {
 }
 
 footer .foot-text {
-    color: #737373;
+    color: #76FF03;
     margin-top: 20px;
 }
